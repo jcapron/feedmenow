@@ -57,3 +57,4 @@ Thumbs.db
 
 # various
 /config/database.yml
+.env
