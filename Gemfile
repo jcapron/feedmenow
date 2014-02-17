@@ -33,9 +33,17 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem "haml-rails"
+group :development do
+  gem "better_errors", ">= 0.0.8"
+end
+
 gem 'rails_12factor', group: :production
 gem 'unicorn'
+
+gem "therubyracer"
+gem "less-rails"
+gem 'twitter-bootstrap-rails'
+gem "haml-rails"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
