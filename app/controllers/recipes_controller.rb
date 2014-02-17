@@ -1,4 +1,5 @@
 class RecipesController < ApplicationController
+  before_action :authenticate_user!, :except => [:show, :index]
   before_action :set_recipe, only: [:show, :edit, :update, :destroy]
 
   # GET /recipes
